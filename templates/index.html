@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block body %}
+    
+    
+
+
+
+
+<style>
+body {background-color: black;}
+body {font-family: 'Comic Sans MS', cursive}
+h1 {font-family: 'Comic Sans MS',}
+p {color:greenyellow ;}
+p {font: 'Comic Sans MS',}
+</style>
+
+
+
+<body> 
+    <form action="/names" method="post">
+        <label for="name">Enter your name:</label>
+        <input type="text" id="name" name="name" required>
+        <input type="submit" value="Submit">
+    </form>
+
+
+
+
+    <h1 style="font-size: 64px;" >
+        Hello from {{ name }}
+     </h1>
+    <p style="font-size: 64px"> This is a website </p>
+    <p>I hope you like comic sans</p><hr>
+    <p style="color: aqua;">I don't remember how to do any of this</p>
+</body>
+{% endblock %}
